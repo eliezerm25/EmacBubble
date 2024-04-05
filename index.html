@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble</title>
+<link href="style.css" rel="stylesheef">  
+</head>
+<body>
+    <section id="menu">
+      <h1>Bubble Game</h1>
+      <div>
+        <button onclick="initialGame('easy')" >Easy</button>
+        <button onclick="initialGame('normal')">Normal</button>
+        <button onclick="initialGame('hard')">Hard</button>
+      </div>
+
+    </section>
+    <section id="game">
+        <input type="text" title="keyboard" id="keyboard">
+        <div id="time">
+            <time>Time: 0</time>
+            <span id="Successes">Successes: 0 </span>
+            <span id="Errors">Errors: 0/10 </span>
+        </div>
+        <article>
+
+        </article>
+    </section>
+    <section id="result">
+        <button onclick="backMenu()" >Back to menu</button>
+        <button onclick="initialGame()" >Game Again</button>        
+    </section>    
+    <script src="script.js"> </script>
+</body>
+</html>
